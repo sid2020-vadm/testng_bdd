@@ -30,4 +30,4 @@ jobs:
         uses: actions/upload-artifact@v4.3.3
         with:
           name: allure-results
-          path: allure-results/s
+          path: allure-results/
