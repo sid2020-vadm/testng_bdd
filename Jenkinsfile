@@ -28,7 +28,7 @@ pipeline {
                                 usernameVariable: 'RESTBOOKER_USERNAME',
                                 passwordVariable: 'RESTBOOKER_PASSWORD'
                         )]) {
-                            bat "mvn test -Pregression"
+                            bat "mvn test -P${profile}"
                             // Uncomment this to run with Docker in pipeline
 //                            sh "docker run -v \$(pwd)/allure-results:/app/allure-results " +
 //                                    "-e RESTBOOKER_USERNAME -e RESTBOOKER_PASSWORD -e MAVEN_PROFILE=${profile} rest-assured-testng"
